@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -t 23:59:59
+#SBATCH -p pbatch
+#SBATCH -N 42
+#SBATCH -n 1000
+
+source ~/.bashrc
+
+srun -n 1000 python Stationary_model_mpisim.py
